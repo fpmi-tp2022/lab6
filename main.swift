@@ -23,3 +23,12 @@ print()
 for (name, city) in airports{
     print("\(name) : \(city)")
 }
+
+for (key, _) in airports{
+  airports.removeValue(forKey : key)
+}
+
+for (name, city) in airports{
+    print("\(name) : \(city)")
+}
+print(airports.count) // count
